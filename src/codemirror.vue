@@ -50,7 +50,7 @@ if (typeof Object.assign != "function") {
 // export
 export default {
     name: "codemirror",
-    emits: ["edit", "ready", "focus", "input"],
+    emits: ["ready", "focus", "input"],
     data() {
         return {
             content: "",
