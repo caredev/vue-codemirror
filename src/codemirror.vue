@@ -137,7 +137,8 @@ export default {
             this.cminstance.on("change", (cm) => {
                 this.content = cm.getValue()
                 if (this.$emit) {
-                    this.$emit("input", this.content)
+                    this.$emit("update:content", this.content)
+                    // this.$emit("input", this.content)
                 }
             })
 
